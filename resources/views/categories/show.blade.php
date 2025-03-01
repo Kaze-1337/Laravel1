@@ -1,4 +1,6 @@
 <x-guest-layout>
+    <h2 style="text-align: center;
+" class="text-4xl text-green-600">Thực đơn</h2>
     <div class="container w-full px-5 py-6 mx-auto">
         <div class="grid lg:grid-cols-4 gap-y-6">
             @foreach ($category->menus as $menu)
@@ -12,7 +14,7 @@
                         </p>
                     </div>
                     <div class="flex items-center justify-between p-4">
-                        <span class="text-xl text-green-600">${{ $menu->price }}</span>
+                        <span class="text-xl text-green-600">{{ $menu->price }}0 VNĐ</span>
                     </div>
                 </div>
             @endforeach
